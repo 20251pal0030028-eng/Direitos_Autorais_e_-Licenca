@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos Autorais e Licenças</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff5fa;
+            color: #57445f;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #c89bcf;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #b58ac5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffe1ef;
+        }
+
+        .banner {
+            background-color: #dbaacb;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner h2 {
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #d9b9d9;
+        }
+
+        section h2 {
+            background-color: #c89bcf;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #e9d5ef;
+            padding: 20px;
+            border-left: 5px solid #c58acb;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: white;
+            background-color: #b58ac5;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .alerta {
+            background-color: #ffe5f0;
+            border-left: 5px solid #dbaacb;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        footer {
+            background-color: #b58ac5;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 23px;
+            }
+
+            .banner h2 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Direitos Autorais e Licenças</h1>
+    <p>Ética, responsabilidade e segurança no desenvolvimento de software</p>
+</header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#copias">Cópia de código</a>
+    <a href="#licencas">Licenças</a>
+    <a href="#consequencias">Consequências</a>
+    <a href="#boaspraticas">Boas práticas</a>
+</nav>
+
+<div class="banner" id="inicio">
+    <h2>Cópia de Código de Terceiros sem Licença</h2>
+    <p>
+        Entenda por que utilizar códigos de outras pessoas sem
+        autorização pode causar problemas e quais são as
+        responsabilidades dos desenvolvedores.
+    </p>
+</div>
+
+<main>
+
+    <section id="copias">
+        <h2>O que é a cópia de código sem licença?</h2>
+        <p>
+            Acontece quando um programador copia ou utiliza
+            o código de outra pessoa sem verificar se tem
+            permissão para isso.
+        </p>
+        <p>
+            Um código encontrado na internet não significa
+            que pode ser usado livremente. Ele também pode
+            ter direitos autorais.
+        </p>
+    </section>
+
+    <section id="licencas">
+        <h2>Principais tipos de licenças</h2>
+        <p>
+            As licenças mostram o que podemos ou não fazer
+            com um programa, como usar, modificar e compartilhar.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>MIT</h3>
+                <p>
+                    Permite usar, modificar e compartilhar
+                    o código, até mesmo em projetos comerciais,
+                    seguindo as regras da licença.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GPL</h3>
+                <p>
+                    Permite modificar e compartilhar o programa,
+                    mas exige que algumas regras sejam seguidas,
+                    como disponibilizar o código-fonte em certas
+                    situações.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Apache 2.0</h3>
+                <p>
+                    Permite usar e compartilhar o código,
+                    além de ter regras sobre direitos autorais
+                    e patentes.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Licença proprietária</h3>
+                <p>
+                    Possui regras próprias e pode limitar
+                    o uso, a cópia e a modificação do programa.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="consequencias">
+        <h2>Consequências da utilização não autorizada</h2>
+        <p>
+            Usar códigos sem respeitar os direitos do autor
+            pode trazer vários problemas:
+        </p>
+
+        <ul>
+            <li>Problemas com a justiça.</li>
+            <li>Pedidos para retirar o código do projeto.</li>
+            <li>Possibilidade de pagar indenizações.</li>
+            <li>Prejuízo à imagem profissional.</li>
+            <li>Dificuldades para vender ou distribuir o software.</li>
+        </ul>
+    </section>
+
+    <section id="boaspraticas">
+        <h2>Como evitar problemas?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>1. Verifique a licença</h3>
+                <p>
+                    Veja se o código pode ser utilizado
+                    antes de copiá-lo.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2. Dê os créditos</h3>
+                <p>
+                    Coloque os créditos do criador
+                    quando a licença exigir.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>3. Siga as regras</h3>
+                <p>
+                    Respeite as condições de uso,
+                    cópia e distribuição.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>4. Desenvolva com ética</h3>
+                <p>
+                    Crie seus próprios códigos e
+                    respeite o trabalho de outros programadores.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusão</h2>
+
+        <div class="alerta">
+            <p>
+                Respeitar os direitos autorais e as licenças
+                é muito importante para desenvolver programas
+                de forma correta. Antes de copiar ou utilizar
+                um código, verifique se ele pode ser usado
+                e respeite o trabalho de seu criador.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Direitos Autorais e Licenças</p>
+    <p>Desenvolvimento de software com ética e responsabilidade.</p>
+</footer>
+
+</body>
+</html>
