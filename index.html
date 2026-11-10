@@ -1,314 +1,441 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Direitos Autorais e Licenças</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cópia de Código sem Licença</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            background-color: #fff5fa;
-            color: #57445f;
-            line-height: 1.6;
-        }
+body {
+    background-color: #fff5fa;
+    color: #57445f;
+    line-height: 1.6;
+}
 
-        header {
-            background-color: #c89bcf;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+header {
+    background-color: #c89bcf;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
 
-        header h1 {
-            margin-bottom: 10px;
-        }
+nav {
+    background-color: #b58ac5;
+    padding: 15px;
+    text-align: center;
+}
 
-        nav {
-            background-color: #b58ac5;
-            padding: 15px;
-            text-align: center;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            font-weight: bold;
-        }
+nav a:hover {
+    color: #ffe1ef;
+}
 
-        nav a:hover {
-            color: #ffe1ef;
-        }
+.banner {
+    background-color: #dbaacb;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        .banner {
-            background-color: #dbaacb;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
+.banner p {
+    max-width: 750px;
+    margin: auto;
+}
 
-        .banner h2 {
-            margin-bottom: 15px;
-        }
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-        .banner p {
-            max-width: 750px;
-            margin: auto;
-        }
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #d9b9d9;
+    scroll-margin-top: 20px;
+}
 
-        main {
-            max-width: 1050px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+section h2 {
+    background-color: #c89bcf;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
 
-        section {
-            background-color: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px #d9b9d9;
-        }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
 
-        section h2 {
-            background-color: #c89bcf;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
+.card {
+    background-color: #e9d5ef;
+    padding: 20px;
+    border-left: 5px solid #c58acb;
+    border-radius: 8px;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            margin-top: 20px;
-        }
+.card h3 {
+    color: white;
+    background-color: #b58ac5;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
-        .card {
-            background-color: #e9d5ef;
-            padding: 20px;
-            border-left: 5px solid #c58acb;
-            border-radius: 8px;
-        }
+.alerta {
+    background-color: #ffe5f0;
+    border-left: 5px solid #dbaacb;
+    padding: 20px;
+    border-radius: 8px;
+}
 
-        .card h3 {
-            color: white;
-            background-color: #b58ac5;
-            padding: 8px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
+ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
 
-        .alerta {
-            background-color: #ffe5f0;
-            border-left: 5px solid #dbaacb;
-            padding: 20px;
-            border-radius: 8px;
-        }
+li {
+    margin-bottom: 8px;
+}
 
-        ul {
-            padding-left: 25px;
-        }
+footer {
+    background-color: #b58ac5;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
 
-        footer {
-            background-color: #b58ac5;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 23px;
-            }
+    .banner h2 {
+        font-size: 25px;
+    }
 
-            .banner h2 {
-                font-size: 25px;
-            }
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
 
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-        }
-    </style>
+    section {
+        padding: 20px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Direitos Autorais e Licenças</h1>
-    <p>Ética, responsabilidade e segurança no desenvolvimento de software</p>
+    <h1>Cópia de Código sem Licença</h1>
+    <p>Ética, responsabilidade e direitos autorais na programação</p>
 </header>
 
 <nav>
     <a href="#inicio">Início</a>
-    <a href="#copias">Cópia de código</a>
-    <a href="#licencas">Licenças</a>
-    <a href="#consequencias">Consequências</a>
-    <a href="#boaspraticas">Boas práticas</a>
+    <a href="#caso">Descrição do caso</a>
+    <a href="#dilema">Dilema ético</a>
+    <a href="#leis">Leis aplicáveis</a>
+    <a href="#etica">Código de ética</a>
+    <a href="#decisao">Tomada de decisão</a>
+    <a href="#prevencao">Como evitar</a>
+    <a href="#referencias">Referências</a>
 </nav>
 
 <div class="banner" id="inicio">
-    <h2>Cópia de Código de Terceiros sem Licença</h2>
+    <h2>Apresentação: Cópia de código sem licença</h2>
     <p>
-        Entenda por que utilizar códigos de outras pessoas sem
-        autorização pode causar problemas e quais são as
-        responsabilidades dos desenvolvedores.
+        Entenda os problemas éticos e legais que acontecem
+        quando um programador utiliza o código-fonte de
+        outra pessoa sem autorização, respeitando os direitos
+        autorais e a propriedade intelectual.
     </p>
 </div>
 
 <main>
 
-    <section id="copias">
-        <h2>O que é a cópia de código sem licença?</h2>
-        <p>
-            Acontece quando um programador copia ou utiliza
-            o código de outra pessoa sem verificar se tem
-            permissão para isso.
-        </p>
-        <p>
-            Um código encontrado na internet não significa
-            que pode ser usado livremente. Ele também pode
-            ter direitos autorais.
-        </p>
-    </section>
+<section id="caso">
+<h2>1. Descrição do caso e das partes envolvidas</h2>
 
-    <section id="licencas">
-        <h2>Principais tipos de licenças</h2>
-        <p>
-            As licenças mostram o que podemos ou não fazer
-            com um programa, como usar, modificar e compartilhar.
-        </p>
+<p>
+O caso acontece quando um programador copia ou utiliza
+o código-fonte desenvolvido por outra pessoa sem
+verificar se possui autorização para isso.
+</p>
 
-        <div class="cards">
+<div class="cards">
 
-            <div class="card">
-                <h3>MIT</h3>
-                <p>
-                    Permite usar, modificar e compartilhar
-                    o código, até mesmo em projetos comerciais,
-                    seguindo as regras da licença.
-                </p>
-            </div>
+<div class="card">
+<h3>Autor do código</h3>
+<p>Pessoa que desenvolveu o programa e possui direitos sobre ele.</p>
+</div>
 
-            <div class="card">
-                <h3>GPL</h3>
-                <p>
-                    Permite modificar e compartilhar o programa,
-                    mas exige que algumas regras sejam seguidas,
-                    como disponibilizar o código-fonte em certas
-                    situações.
-                </p>
-            </div>
+<div class="card">
+<h3>Programador que copiou</h3>
+<p>Pessoa que utilizou o código sem verificar as condições de uso.</p>
+</div>
 
-            <div class="card">
-                <h3>Apache 2.0</h3>
-                <p>
-                    Permite usar e compartilhar o código,
-                    além de ter regras sobre direitos autorais
-                    e patentes.
-                </p>
-            </div>
+<div class="card">
+<h3>Empresa ou cliente</h3>
+<p>Pode se beneficiar do código utilizado indevidamente.</p>
+</div>
 
-            <div class="card">
-                <h3>Licença proprietária</h3>
-                <p>
-                    Possui regras próprias e pode limitar
-                    o uso, a cópia e a modificação do programa.
-                </p>
-            </div>
+<div class="card">
+<h3>Usuários</h3>
+<p>Podem ser afetados caso o programa apresente problemas ou utilize dados sem autorização.</p>
+</div>
 
-        </div>
-    </section>
+</div>
+</section>
 
-    <section id="consequencias">
-        <h2>Consequências da utilização não autorizada</h2>
-        <p>
-            Usar códigos sem respeitar os direitos do autor
-            pode trazer vários problemas:
-        </p>
+<section id="dilema">
+<h2>2. Dilema ético: qual é o conflito?</h2>
 
-        <ul>
-            <li>Problemas com a justiça.</li>
-            <li>Pedidos para retirar o código do projeto.</li>
-            <li>Possibilidade de pagar indenizações.</li>
-            <li>Prejuízo à imagem profissional.</li>
-            <li>Dificuldades para vender ou distribuir o software.</li>
-        </ul>
-    </section>
+<p>
+O conflito está entre facilitar o trabalho utilizando
+um código já pronto e respeitar os direitos e o esforço
+de quem desenvolveu aquele código.
+</p>
 
-    <section id="boaspraticas">
-        <h2>Como evitar problemas?</h2>
+<p>
+O programador pode economizar tempo, mas, se utilizar
+o código sem permissão, pode cometer uma infração legal
+e agir de maneira antiética.
+</p>
 
-        <div class="cards">
+<div class="alerta">
+<h3>Questão principal</h3>
+<p>
+É correto utilizar o trabalho de outra pessoa sem autorização
+apenas para facilitar o próprio trabalho?
+</p>
+</div>
+</section>
 
-            <div class="card">
-                <h3>1. Verifique a licença</h3>
-                <p>
-                    Veja se o código pode ser utilizado
-                    antes de copiá-lo.
-                </p>
-            </div>
+<section id="leis">
+<h2>3. Leis aplicáveis no Brasil</h2>
 
-            <div class="card">
-                <h3>2. Dê os créditos</h3>
-                <p>
-                    Coloque os créditos do criador
-                    quando a licença exigir.
-                </p>
-            </div>
+<div class="cards">
 
-            <div class="card">
-                <h3>3. Siga as regras</h3>
-                <p>
-                    Respeite as condições de uso,
-                    cópia e distribuição.
-                </p>
-            </div>
+<div class="card">
+<h3>LGPD - Lei 13.709/2018</h3>
+<p>Protege os dados pessoais. Pode ser aplicada se o programa utilizar ou tratar dados pessoais de maneira irregular.</p>
+</div>
 
-            <div class="card">
-                <h3>4. Desenvolva com ética</h3>
-                <p>
-                    Crie seus próprios códigos e
-                    respeite o trabalho de outros programadores.
-                </p>
-            </div>
+<div class="card">
+<h3>Marco Civil da Internet - Lei 12.965/2014</h3>
+<p>Estabelece princípios, direitos e deveres para o uso da internet no Brasil.</p>
+</div>
 
-        </div>
-    </section>
+<div class="card">
+<h3>Lei de Software - Lei 9.609/1998</h3>
+<p>Protege programas de computador e estabelece regras para sua utilização e reprodução.</p>
+</div>
 
-    <section>
-        <h2>Conclusão</h2>
+<div class="card">
+<h3>Lei Carolina Dieckmann - Lei 12.737/2012</h3>
+<p>Trata de crimes relacionados à invasão de dispositivos informáticos. Não se aplica automaticamente à simples cópia de código.</p>
+</div>
 
-        <div class="alerta">
-            <p>
-                Respeitar os direitos autorais e as licenças
-                é muito importante para desenvolver programas
-                de forma correta. Antes de copiar ou utilizar
-                um código, verifique se ele pode ser usado
-                e respeite o trabalho de seu criador.
-            </p>
-        </div>
-    </section>
+<div class="card">
+<h3>Direitos Autorais - Lei 9.610/1998</h3>
+<p>Protege obras intelectuais e estabelece regras para reprodução e utilização de obras protegidas.</p>
+</div>
 
-</main>
+</div>
+</section>
 
-<footer>
-    <p>© 2026 - Direitos Autorais e Licenças</p>
-    <p>Desenvolvimento de software com ética e responsabilidade.</p>
-</footer>
+<section id="etica">
+<h2>4. Código de ética de referência</h2>
+
+<p>
+Vamos utilizar o Código de Ética da Sociedade Brasileira
+de Computação (SBC) como referência.
+</p>
+
+<p>Esse código orienta os profissionais a:</p>
+
+<ul>
+<li>Trabalhar com honestidade e responsabilidade.</li>
+<li>Respeitar a legislação e os direitos de terceiros.</li>
+<li>Respeitar os direitos autorais e a propriedade intelectual.</li>
+<li>Não se apropriar do trabalho intelectual de outras pessoas.</li>
+</ul>
+
+<div class="alerta" style="margin-top:20px;">
+<p>
+O comportamento do programador que copia código sem autorização
+vai contra esses princípios, principalmente o respeito ao
+trabalho dos outros.
+</p>
+</div>
+</section>
+
+<section id="decisao">
+<h2>5. Passos de tomada de decisão ética</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Identificar o problema</h3>
+<p>O programador utilizou um código de outra pessoa sem verificar a licença ou pedir autorização.</p>
+</div>
+
+<div class="card">
+<h3>2. Levantar alternativas</h3>
+<ul>
+<li>Continuar utilizando sem autorização.</li>
+<li>Pedir autorização ao autor.</li>
+<li>Verificar a licença e seguir suas condições.</li>
+<li>Procurar outro código com licença adequada.</li>
+<li>Desenvolver uma solução própria.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>3. Avaliar as consequências</h3>
+<p>Continuar copiando pode gerar problemas legais e prejudicar a reputação profissional.</p>
+<p>Pedir autorização demonstra respeito ao autor.</p>
+<p>Utilizar um código com licença adequada evita conflitos.</p>
+</div>
+
+<div class="card">
+<h3>4. Decidir</h3>
+<p>A melhor decisão é interromper o uso irregular, verificar a licença e buscar autorização do autor ou substituir o código por uma alternativa permitida.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>6. Decisão final do grupo e justificativa</h2>
+
+<div class="alerta">
+<p>
+Nossa decisão como grupo é que o programador não deve utilizar
+códigos de outras pessoas sem verificar a licença e as condições
+de uso.
+</p>
+
+<p style="margin-top:12px;">
+Caso já tenha realizado a cópia, deve regularizar a situação,
+solicitando autorização ao autor ou substituindo o código
+por outro que permita sua utilização.
+</p>
+</div>
+
+<h3 style="margin-top:20px;">Justificativa</h3>
+
+<p>
+Escolhemos essa decisão porque acreditamos que a ética
+profissional deve estar presente em todas as atividades
+da área de tecnologia. É importante respeitar o trabalho
+dos outros, cumprir as leis e agir com honestidade.
+</p>
+
+<p style="margin-top:10px;">
+O fato de um código estar disponível na internet
+não significa que ele seja livre de direitos autorais.
+</p>
+</section>
+
+<section id="prevencao">
+<h2>7. Como evitar que o problema aconteça novamente?</h2>
+
+<p>Algumas medidas importantes são:</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Verificar a licença</h3>
+<p>Sempre verificar a licença antes de utilizar um código.</p>
+</div>
+
+<div class="card">
+<h3>2. Dar os devidos créditos</h3>
+<p>Reconhecer os autores e dar os créditos necessários.</p>
+</div>
+
+<div class="card">
+<h3>3. Verificar a origem</h3>
+<p>Não copiar códigos de fontes desconhecidas sem verificar sua origem.</p>
+</div>
+
+<div class="card">
+<h3>4. Utilizar licenças adequadas</h3>
+<p>Utilizar bibliotecas e programas com licenças que permitam seu uso.</p>
+</div>
+
+<div class="card">
+<h3>5. Pedir autorização</h3>
+<p>Entrar em contato com o autor quando a autorização for necessária.</p>
+</div>
+
+<div class="card">
+<h3>6. Orientar profissionais</h3>
+<p>Orientar programadores sobre direitos autorais e ética profissional.</p>
+</div>
+
+<div class="card">
+<h3>7. Manter registros</h3>
+<p>Manter registros das bibliotecas e códigos utilizados nos projetos.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Conclusão</h2>
+
+<div class="alerta">
+<p>
+Concluímos que copiar códigos sem licença não é apenas
+uma questão técnica, mas também uma questão ética e legal.
+Como futuros profissionais da tecnologia, precisamos respeitar
+o trabalho de outros desenvolvedores, agir com responsabilidade
+e utilizar os recursos disponíveis de maneira correta.
+</p>
+
+<p style="margin-top:12px;">
+A tecnologia deve ser construída com conhecimento,
+respeito e honestidade.
+</p>
+</div>
+</section>
+
+<section id="referencias">
+<h2>Referências</h2>
+
+<p><strong>Lei nº 9.609/1998:</strong> Lei de Software.</p>
+<p><strong>Lei nº 9.610/1998:</strong> Direitos Autorais.</p>
+<p><strong>Lei nº 13.709/2018:</strong> LGPD.</p>
+<p><strong>Lei nº 12.965/2014:</strong> Marco Civil da Internet.</p>
+<p><strong>Lei nº 12.737/2012:</strong> Lei Carolina Dieckmann.</p>
+<p><strong>SBC:</strong> Código de Ética da Sociedade Brasileira de Computação.</p>
+
+<div class="alerta" style="margin-top:20px;">
 
 </body>
 </html>
